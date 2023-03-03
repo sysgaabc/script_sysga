@@ -164,55 +164,41 @@ do
 done
  cd  $FINAL_BACKUP_DIR
  
-tar -cf 01.tar         arquivos.custom
-tar -cf 02.tar        auditoria.custom
-tar -cf 03.tar              cep.custom
-tar -cf 04.tar     GED_CART_ASS.custom
-tar -cf 05.tar       GED_FICHAS.custom
-tar -cf 06.tar GED_LOG_USUARIOS.custom
-tar -cf 07.tar        indmoveis.custom
-tar -cf 08.tar      ind_pessoal.custom
-tar -cf 09.tar         postgres.custom
-tar -cf 10.tar         protesto.custom
-tar -cf 11.tar        protocolo.custom
-tar -cf 12.tar         registro.custom
-tar -cf 13.tar             rgim.custom
-tar -cf 14.tar            sysga.custom
-tar -cf 15.tar       sysga_docs.custom
+tar -czf 01.tar.gz         arquivos.custom
+tar -czf 02.tar.gz        auditoria.custom
+tar -czf 03.tar.gz              cep.custom
+tar -czf 04.tar.gz     GED_CART_ASS.custom
+tar -czf 05.tar.gz       GED_FICHAS.custom
+tar -czf 06.tar.gz GED_LOG_USUARIOS.custom
+tar -czf 07.tar.gz        indmoveis.custom
+tar -czf 08.tar.gz      ind_pessoal.custom
+tar -czf 09.tar.gz         postgres.custom
+tar -czf 10.tar.gz         protesto.custom
+tar -czf 11.tar.gz        protocolo.custom
+tar -czf 12.tar.gz         registro.custom
+tar -czf 13.tar.gz             rgim.custom
+tar -czf 14.tar.gz            sysga.custom
+tar -czf 15.tar.gz       sysga_docs.custom
 
 
 
-gzip -9 01.tar         
-gzip -9 02.tar        
-gzip -9 03.tar              
-gzip -9 04.tar     
-gzip -9 05.tar       
-gzip -9 06.tar 
-gzip -9 07.tar        
-gzip -9 08.tar      
-gzip -9 09.tar         
-gzip -9 10.tar         
-gzip -9 11.tar        
-gzip -9 12.tar         
-gzip -9 13.tar             
-gzip -9 14.tar            
-gzip -9 15.tar       
+     
 
-gpg --encrypt --output 01.tar.gz.gpg         --recipient sysgag@gmail.com 01.tar.gz
-gpg --encrypt --output 02.tar.gz.gpg         --recipient sysgag@gmail.com 02.tar.gz
-gpg --encrypt --output 03.tar.gz.gpg         --recipient sysgag@gmail.com 03.tar.gz
-gpg --encrypt --output 04.tar.gz.gpg         --recipient sysgag@gmail.com 04.tar.gz
-gpg --encrypt --output 05.tar.gz.gpg         --recipient sysgag@gmail.com 05.tar.gz
-gpg --encrypt --output 06.tar.gz.gpg         --recipient sysgag@gmail.com 06.tar.gz
-gpg --encrypt --output 07.tar.gz.gpg         --recipient sysgag@gmail.com 07.tar.gz
-gpg --encrypt --output 08.tar.gz.gpg         --recipient sysgag@gmail.com 08.tar.gz
-gpg --encrypt --output 09.tar.gz.gpg         --recipient sysgag@gmail.com 09.tar.gz
-gpg --encrypt --output 10.tar.gz.gpg         --recipient sysgag@gmail.com 10.tar.gz
-gpg --encrypt --output 11.tar.gz.gpg         --recipient sysgag@gmail.com 11.tar.gz
-gpg --encrypt --output 12.tar.gz.gpg         --recipient sysgag@gmail.com 12.tar.gz
-gpg --encrypt --output 13.tar.gz.gpg         --recipient sysgag@gmail.com 13.tar.gz
-gpg --encrypt --output 14.tar.gz.gpg         --recipient sysgag@gmail.com 14.tar.gz
-gpg --encrypt --output 15.tar.gz.gpg         --recipient sysgag@gmail.com 15.tar.gz
+gpg --encrypt --output 01.tar.gz.gpg         --recipient xxxxxx@gmail.com 01.tar.gz
+gpg --encrypt --output 02.tar.gz.gpg         --recipient xxxxxx@gmail.com 02.tar.gz
+gpg --encrypt --output 03.tar.gz.gpg         --recipient xxxxxx@gmail.com 03.tar.gz
+gpg --encrypt --output 04.tar.gz.gpg         --recipient xxxxxx@gmail.com 04.tar.gz
+gpg --encrypt --output 05.tar.gz.gpg         --recipient xxxxxx@gmail.com 05.tar.gz
+gpg --encrypt --output 06.tar.gz.gpg         --recipient xxxxxx@gmail.com 06.tar.gz
+gpg --encrypt --output 07.tar.gz.gpg         --recipient xxxxxx@gmail.com 07.tar.gz
+gpg --encrypt --output 08.tar.gz.gpg         --recipient xxxxxx@gmail.com 08.tar.gz
+gpg --encrypt --output 09.tar.gz.gpg         --recipient xxxxxx@gmail.com 09.tar.gz
+gpg --encrypt --output 10.tar.gz.gpg         --recipient xxxxxx@gmail.com 10.tar.gz
+gpg --encrypt --output 11.tar.gz.gpg         --recipient xxxxxx@gmail.com 11.tar.gz
+gpg --encrypt --output 12.tar.gz.gpg         --recipient xxxxxx@gmail.com 12.tar.gz
+gpg --encrypt --output 13.tar.gz.gpg         --recipient xxxxxx@gmail.com 13.tar.gz
+gpg --encrypt --output 14.tar.gz.gpg         --recipient xxxxxx@gmail.com 14.tar.gz
+gpg --encrypt --output 15.tar.gz.gpg         --recipient xxxxxx@gmail.com 15.tar.gz
 
 rm *.custom
 rm *tar.gz
